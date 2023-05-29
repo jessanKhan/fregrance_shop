@@ -32,7 +32,7 @@ import pro1 from "../../../../public/assets/images/pro3/1.jpg";
 import pro27 from "../../../../public/assets/images/pro3/27.jpg";
 import pro36 from "../../../../public/assets/images/pro3/36.jpg";
 import dynamic from "next/dynamic";
-const Chart = dynamic(() => import("react-apexcharts"), { ssr: false });
+// const Chart = dynamic(() => import("react-apexcharts"), { ssr: false });
 
 import { apexPieChart, lineChart1 } from "../../../../data/vendorData";
 
@@ -355,12 +355,12 @@ const Dashboard = () => {
                       <Card>
                         <CardBody>
                           <div id="chart">
-                            <Chart
+                            {/* <Chart
                               options={lineChart1.options}
                               series={lineChart1.series}
                               height="170"
                               type="area"
-                            />
+                            /> */}
                           </div>
                         </CardBody>
                       </Card>
@@ -369,12 +369,12 @@ const Dashboard = () => {
                       <Card>
                         <CardBody>
                           <div id="chart-order">
-                            <Chart
+                            {/* <Chart
                               options={apexPieChart.options}
                               series={apexPieChart.series}
                               type="donut"
                               width={380}
-                            />
+                            /> */}
                           </div>
                         </CardBody>
                       </Card>
