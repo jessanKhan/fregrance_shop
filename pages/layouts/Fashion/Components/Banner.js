@@ -7,14 +7,14 @@ import MasterBanner from "./MasterBanner";
 const Data = [
   {
     img: "home1",
-    title: "welcome to fashion",
-    desc: "men fashion",
+    title: "welcome to fragrance",
+    desc: "fragrance of love",
     link: "/left-sidebar/collection ",
   },
   {
     img: "home2",
-    title: "welcome to fashion",
-    desc: "women fashion",
+    title: "welcome to fragrance",
+    desc: "fragrance of empowerment",
     link: "/left-sidebar/collection ",
   },
 ];

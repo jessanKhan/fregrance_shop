@@ -7,14 +7,14 @@ import banner2 from "../../../../public/assets/images/sub-banner2.jpg";
 const Data = [
   {
     img: banner1,
-    about: "men",
+    about: "fragrances",
     offer: "10% off",
     link: "/left-sidebar/collection",
     class: "p-right text-center",
   },
   {
     img: banner2,
-    about: "women",
+    about: "cosmetics",
     offer: "10% off",
     link: "/left-sidebar/collection",
     class: "p-right text-center",
@@ -28,7 +28,7 @@ const MasterCollectionBanner = ({ img, about, offer, link, classes }) => {
         <a>
           <div className={`collection-banner ${classes}`}>
             <Media src={img} className="img-fluid" alt="" />
-            <div className="contain-banner">
+            <div className="contain-banner" style={{backgroundColor:"rgba(255,255,255,0.5)"}}>
               <div>
                 <h4>{offer}</h4>
                 <h2>{about}</h2>
