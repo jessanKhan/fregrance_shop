@@ -1,6 +1,6 @@
 const nextConfig = {
   env: {
-    API_URL: "http://localhost:4000/graphql",
+    API_URL: "https://multikartapi.onrender.com/graphql",
   },
   reactStrictMode: true,
   webpack(config, options) {
