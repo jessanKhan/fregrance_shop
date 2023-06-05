@@ -10,7 +10,7 @@ i18next
         resources: {
             en: {
                 translations: {
-                    'topbar_title': 'Welcome to Our store Fragrance Event',
+                    'topbar_title': 'Welcome to our Fragrance Events Store',
                     'call_us': 'Call Us',
                     'Home': 'Home',
                     'features': 'features',

@@ -56,7 +56,7 @@ const MasterFooter = ({
                       <div>
                         <h4>KNOW IT ALL FIRST!</h4>
                         <p>
-                          Never Miss Anything From Multikart By Signing Up To
+                          Never Miss Anything From Fragrance Events By Signing Up To
                           Our Newsletter.
                         </p>
                       </div>
@@ -271,8 +271,7 @@ const MasterFooter = ({
                     <div className="footer-contant">
                       <ul className="contact-list">
                         <li>
-                          <i className="fa fa-map-marker"></i>Multikart Demo
-                          Store, Demo store India 345-659
+                          <i className="fa fa-map-marker"></i>151 Edinburgh Street, Pukekohe, Auckland 2120, New Zealand
                         </li>
                         <li>
                           <i className="fa fa-phone"></i>Call Us: 123-456-7898

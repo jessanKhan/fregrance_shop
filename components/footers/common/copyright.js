@@ -9,8 +9,8 @@ const CopyRight = ({layout, fluid}) => {
                     <Row>
                         <Col xl="6" md="6" sm="12">
                             <div className="footer-end">
-                                <p><i className="fa fa-copyright" aria-hidden="true"></i> 2021-22 themeforest
-                                        powered by pixelstrap</p>
+                            <p> Copyright 2019-2023 <i className="fa fa-copyright" aria-hidden="true"></i> Fragrance Events powered by Adora AI.</p>
+
                             </div>
                         </Col>
                         <Col xl="6" md="6" sm="12">
