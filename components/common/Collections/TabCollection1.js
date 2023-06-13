@@ -58,6 +58,7 @@ const TabContent = ({
   const curContext = useContext(CurrencyContext);
   const currency = curContext.state;
   const quantity = context.quantity;
+  console.log("first product", data);
 
   return (
     <Row className="no-slider">

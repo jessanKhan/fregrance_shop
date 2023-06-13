@@ -1,6 +1,6 @@
 import React, { useState, useContext, useEffect } from "react";
 import { Col, Row, Media, Button, Spinner } from "reactstrap";
-import Menu2 from "../../../public/assets/images/mega-menu/2.jpg";
+import Menu2 from "../../../public/assets/images/fragrance/banner.jpg";
 import { useQuery } from "@apollo/client";
 import { gql } from "@apollo/client";
 import FilterContext from "../../../helpers/filter/FilterContext";
@@ -165,7 +165,7 @@ const ProductList = ({ colClass, layoutList, openSidebar, noSidebar }) => {
                 />
               </a>
               <div className="top-banner-content small-section">
-                <h4>fashion</h4>
+                <h4>Fragrances</h4>
                 <h5>
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry.

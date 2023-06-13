@@ -10,10 +10,10 @@ const Service = () => {
             <div className="section-t-space">
                 <ServiceLayout sectionClass={"service border-section small-section"}  />
             </div>
-            <WatchService />
+            {/* <WatchService />
             <div className="section-b-space">
                 <ToolService />
-            </div>
+            </div> */}
         </CommonLayout>
     )
 }

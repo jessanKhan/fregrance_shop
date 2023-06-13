@@ -89,7 +89,6 @@ const NewProduct = ({ type, designClass, cartClass, spanClass }) => {
       limit: 8,
     },
   });
-
   return (
     <Fragment>
       <section className="tools_product">
