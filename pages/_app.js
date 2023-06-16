@@ -13,6 +13,7 @@ import { CurrencyContextProvider } from "../helpers/Currency/CurrencyContext";
 import Helmet from "react-helmet";
 import { ApolloProvider } from "@apollo/client";
 import { useApollo } from '../helpers/apollo';
+import Head from "next/head";
 
 export default function MyApp({ Component, pageProps }) {
   const [isLoading, setIsLoading] = useState(true);
@@ -52,9 +53,13 @@ export default function MyApp({ Component, pageProps }) {
               name="viewport"
               content="width=device-width, initial-scale=1"
             />
-            {/* <Head>
-              <link rel="icon" type="image/x-icon" href={favicon} />
-            </Head> */}
+            <Head>
+              {/* <link rel="icon" type="image/x-icon" href={favicon} /> */}
+              <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css"/>
+              <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css"/>
+              <script src="https://unpkg.com/react-id-swiper@3.0.0/lib/react-id-swiper.js"></script>
+              <script src="https://unpkg.com/react-id-swiper@3.0.0/lib/react-id-swiper.min.js"></script>
+            </Head>
             <title>Fragrance Events - Shop</title>
           </Helmet>
           <div>

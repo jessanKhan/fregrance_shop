@@ -191,7 +191,7 @@ const SpecialProducts = ({
                 className={activeTab == "furniture" ? "active" : ""}
                 onClick={() => setActiveTab("furniture")}
               >
-                SPECIAL
+                LAST CHANCE
               </Tab>
             </TabList>
 

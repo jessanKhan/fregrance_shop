@@ -7,14 +7,26 @@ import MasterBanner from "./MasterBanner";
 const Data = [
   {
     img: "home1",
-    title: "welcome to fragrance",
-    desc: "fragrance of love",
+    title: "Take it to the next level",
+    desc: "Silky Makeup",
+    link: "/left-sidebar/collection ",
+  },
+  { 
+    img: "home2",
+    title: "It is about how you feel that counts, not how you look.",
+    desc: "Luxurious Skincare",
     link: "/left-sidebar/collection ",
   },
   {
-    img: "home2",
-    title: "welcome to fragrance",
-    desc: "fragrance of empowerment",
+    img: "home3",
+    title: "Your favourite luxury brands with extra benefits.",
+    desc: "Fabulous fragrance",
+    link: "/left-sidebar/collection ",
+  },
+  {
+    img: "home4",
+    title: "Cut crystal vessels with customized fragrance scents",
+    desc: "Exquisite Home Decor",
     link: "/left-sidebar/collection ",
   },
 ];

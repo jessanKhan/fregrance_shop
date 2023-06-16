@@ -1,0 +1,49 @@
+.slider-container {
+  position: relative;
+  width: 400px;
+  /* Adjust width as needed */
+  height: 120px;
+  /* Adjust height as needed */
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  /* Ensure items are in a row */
+  width: max-content;
+  /* Adjust width based on total logos */
+}
+
+.slider-track {
+  display: flex;
+  /* Ensure items are in a row */
+}
+
+.slider-item {
+  width: 120px;
+  /* Adjust width as needed */
+  height: 120px;
+  /* Adjust height as needed */
+  margin-right: 10px;
+  /* Adjust margin between logos */
+}
+
+.slider-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100px;
+  height: 40px;
+  /* Adjust button dimensions as needed */
+  background-color: #ccc;
+  border: none;
+  color: #fff;
+}
+
+.prev-button {
+  left: 0;
+}
+
+.next-button {
+  right: 0;
+}
