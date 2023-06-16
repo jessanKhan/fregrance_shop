@@ -11,7 +11,11 @@ const TopBar = ({topClass}) => {
                         <div className="header-contact">
                             <ul>
                                 <li>Welcome to our Fragrance Events Store</li>
-                                <li><i className="fa fa-phone text-white" aria-hidden="true"></i>{('Call Us')}:  123 - 456 - 7890</li>
+                                <Link href="https://fragranceevents.com/master/index.php/?route=pages/events" passHref>
+                                    <a> <li>Learn More About Our Hosting Bonus</li>
+                                    </a>
+                                    </Link>
+
                             </ul>
                         </div>
                     </Col>
