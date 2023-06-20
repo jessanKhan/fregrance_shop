@@ -365,14 +365,14 @@ const MasterFooter = ({
                           <i className="fa fa-map-marker"></i>151 Edinburgh Street, Pukekohe, Auckland 2120, New Zealand
                         </li>
                         <li>
-                          <i className="fa fa-phone"></i>Phone: 123-456-7898
+                          <i className="fa fa-phone"></i>Phone: 0064- 09 553 5330
                         </li>
                         <li>
                           <i className="fa fa-envelope-o"></i>Email:{" "}
-                          <a href="#">support@fiot.com</a>
+                          <a href="#">support@fragranceevents.co.nz</a>
                         </li>
                         <li>
-                          <i className="fa fa-fax"></i>Fax: 123456
+                          <i className="fa fa-fax"></i>Country code: 0064
                         </li>
                       </ul>
                     </div>
