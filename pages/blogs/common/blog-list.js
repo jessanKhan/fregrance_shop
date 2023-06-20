@@ -20,7 +20,7 @@ const GET_PRODUCTS = gql`
 const BlogList = () => {
   var { data } = useQuery(GET_PRODUCTS, {
     variables: {
-      type: "fashion",
+      type: "blogpost",
     },
   });
 

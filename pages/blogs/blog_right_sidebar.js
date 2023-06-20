@@ -11,7 +11,7 @@ const blogRightSidebar = () => {
                 <Container>
                     <Row>
                     <div className="col-xl-9 col-lg-8 col-md-7">
-                            <BlogList />
+                            <BlogList  />
                         </div>
                         <BlogSidebar />
                     </Row>
