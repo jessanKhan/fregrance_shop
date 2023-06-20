@@ -24,6 +24,8 @@ const BlogSection = ({ type, sectionClass, title, inner, hrClass }) => {
       type: type,
     },
   });
+
+  console.log("data slider", data);
   return (
     <Fragment>
       <section className={sectionClass}>

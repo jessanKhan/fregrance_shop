@@ -156,7 +156,7 @@ const MasterFooter = ({
                   </div>
                 </Collapse>
               </Col>
-              <Col className="offset-xl-1">
+              {/* <Col className="offset-xl-1">
                 <div className="sub-title">
                   <div
                     className={`footer-title ${isOpen && collapse == 2 ? "active" : ""
@@ -204,6 +204,8 @@ const MasterFooter = ({
                   </Collapse>
                 </div>
               </Col>
+               */}
+             
               <Col>
                 <div className="sub-title">
                   <div
@@ -218,7 +220,7 @@ const MasterFooter = ({
                         } else setIsOpen(true);
                       }}
                     >
-                      why we choose
+                      contact
                       <span className="according-menu"></span>
                     </h4>
                   </div>
@@ -227,20 +229,109 @@ const MasterFooter = ({
                   >
                     <div className="footer-contant">
                       <ul>
-                        <li>
-                          <a href="#">shipping & return</a>
+                      <li>
+                          <a href="#">contact us</a>
                         </li>
                         <li>
-                          <a href="#">secure shopping</a>
+                          <a href="#">shipping information</a>
                         </li>
                         <li>
-                          <a href="#">gallary</a>
+                          <a href="#">returns & exchanges</a>
+                        </li>
+                        <li>
+                          <a href="#">shareable cart</a>
+                        </li>
+                        <li>
+                          <a href="#">FAQ section</a>
+                        </li>
+                        <li>
+                          <a href="#">merchant details</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </Collapse>
+                </div>
+              </Col>
+              <Col>
+                <div className="sub-title">
+                  <div
+                    className={`footer-title ${isOpen && collapse == 3 ? "active" : ""
+                      } `}
+                  >
+                    <h4
+                      onClick={() => {
+                        if (width) {
+                          setIsOpen(!isOpen);
+                          setCollapse(3);
+                        } else setIsOpen(true);
+                      }}
+                    >
+                    gifts & rewards
+                      <span className="according-menu"></span>
+                    </h4>
+                  </div>
+                  <Collapse
+                    isOpen={width ? (collapse === 3 ? isOpen : false) : true}
+                  >
+                    <div className="footer-contant">
+                      <ul>
+                      <li>
+                          <a href="#">gift certificates</a>
+                        </li>
+                        <li>
+                          <a href="#">customer rewards</a>
+                        </li>
+                        <li>
+                          <a href="#">host rewards</a>
                         </li>
                         <li>
                           <a href="#">affiliates</a>
                         </li>
                         <li>
-                          <a href="#">contacts</a>
+                          <a href="#">giving back</a>
+                        </li>
+                        <li>
+                          <a href="#">download our mobile app</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </Collapse>
+                </div>
+              </Col>
+              <Col>
+                <div className="sub-title">
+                  <div
+                    className={`footer-title ${isOpen && collapse == 3 ? "active" : ""
+                      } `}
+                  >
+                    <h4
+                      onClick={() => {
+                        if (width) {
+                          setIsOpen(!isOpen);
+                          setCollapse(3);
+                        } else setIsOpen(true);
+                      }}
+                    >
+                      terms & Conditions
+                      <span className="according-menu"></span>
+                    </h4>
+                  </div>
+                  <Collapse
+                    isOpen={width ? (collapse === 3 ? isOpen : false) : true}
+                  >
+                    <div className="footer-contant">
+                      <ul>
+                     <li>
+                          <a href="#">terms & Conditions of sale</a>
+                        </li>
+                        <li>
+                          <a href="#">return policy</a>
+                        </li>
+                        <li>
+                          <a href="#">privecy policy</a>
+                        </li>
+                        <li>
+                          <a href="#">join newsletter</a>
                         </li>
                       </ul>
                     </div>

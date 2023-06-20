@@ -14,8 +14,29 @@ import Paragraph from "../components/common/Paragraph";
 import ModalComponent from "../components/common/Modal";
 import Helmet from "react-helmet";
 import MasterFooter from "../components/footers/common/MasterFooter";
+import BrandsSlider from './layouts/Fashion/Components/BrandsSlider';
+import BrandsParagraph from '../components/common/BrandsParagraph';
+import product from '../public/assets/images/fragrance/pro/12.jpg'
 
 const Fashion = () => {
+  const images = [
+    {
+      id: 1,
+      url: '../assets/images/fragrance/pro/12.jpg',
+      alt: 'Image 1',
+    },
+    {
+      id: 2,
+      url: '../assets/images/fragrance/pro/12.jpg',
+      alt: 'Image 2',
+    },
+    {
+      id: 3,
+      url: '../assets/images/fragrance/pro/12.jpg',
+      alt: 'Image 3',
+    },
+    // Add more image objects here
+  ];
   return (
     <>
       <Helmet>
@@ -26,6 +47,13 @@ const Fashion = () => {
       <HeaderOne logoName={"logo.png"} topClass="top-header" />
       <Banner />
       <CollectionBanner />
+      {/* <BrandsParagraph
+        title="title1 section-t-space"
+        inner="title-inner1"
+        hrClass={false}
+      /> */}
+      <BrandsSlider type="fashion" title="title1" inner="title-inner1"/>
+       
       <Paragraph
         title="title1 section-t-space"
         inner="title-inner1"

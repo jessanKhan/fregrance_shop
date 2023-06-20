@@ -126,10 +126,10 @@ const NavBar = () => {
       event.target.nextElementSibling.classList.add("opensubmenu");
     }
   };
-
+ 
   return (
     <div>
-      <div className="main-navbar">
+      <div className="main-navbar" style={{width:"100%"}}>
         <div id="mainnav">
           <div className="toggle-nav" onClick={openNav.bind(this)}>
             <i className="fa fa-bars sidebar-bar"></i>

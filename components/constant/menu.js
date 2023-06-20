@@ -51,20 +51,7 @@ export const MENUITEMS = [
 
    //    ]
    // },
-   { path: '/shop/left_sidebar', title: 'Shop', type: 'link'} ,
-   // {
-   //    title: 'Shop', type: 'sub', children: [
-   //       { path: '/shop/left_sidebar', title: 'Left Sidebar', type: 'link' },
-   //       { path: '/shop/right_sidebar', title: 'Right Sidebar', type: 'link' },
-   //       { path: '/shop/no_sidebar', title: 'No Sidebar', type: 'link', },
-   //       { path: '/shop/sidebar_popup', title: 'Sidebar Popup', type: 'link' },
-   //       { path: '/shop/metro', title: 'Metro', type: 'link', tag: 'new' },
-   //       { path: '/shop/full_width', title: 'Full Width', type: 'link', tag: 'new' },
-   //       { path: '/shop/three_grid', title: '3 Grid', type: 'link' },
-   //       { path: '/shop/six_grid', title: '6 Six', type: 'link' },
-   //       { path: '/shop/list_view', title: 'List View', type: 'link' }
-   //    ],
-   // },
+   // { path: '/shop/left_sidebar', title: 'Shop', type: 'link'} ,
    { path: '/product-details/no-sidebar', title: 'Shop by Categories', type: 'sub',children: [
       { path: '/layouts/Tools', title: 'Fragrances', type: 'link' },
       { path: '/layouts/Christmas', title: 'Skin Care', type: 'link' },
@@ -132,7 +119,35 @@ export const MENUITEMS = [
          // }
       ]
    },
-   { path: '/product-details/no-sidebar', title: 'Products', type: 'link'},
+   { path: '/shop/left_sidebar', title: 'Rewards', type: 'link'} ,
+   { path: '/shop/left_sidebar', title: 'Join Our Team', type: 'link'} ,
+   { path: '/shop/left_sidebar', title: 'Our Story', type: 'link'} ,
+   { path: '/shop/left_sidebar', title: 'Events', type: 'link'} ,
+   {
+      title: 'Blogs', type: 'sub', children: [
+         // { path: '/blogs/blog_left_sidebar', title: 'blog left sidebar', type: 'link' },
+         { path: '/blogs/blog_right_sidebar', title: 'blogs', type: 'link' },
+         // { path: '/blogs/no_sidebar', title: 'no sidebar', type: 'link' },
+         { path: '/blogs/blog_detail', title: 'blog detail', type: 'link' },
+      ]
+   },
+   { path: '/shop/left_sidebar', title: 'Contacts', type: 'link'} ,
+
+   // {
+   //    title: 'Shop', type: 'sub', children: [
+   //       { path: '/shop/left_sidebar', title: 'Left Sidebar', type: 'link' },
+   //       { path: '/shop/right_sidebar', title: 'Right Sidebar', type: 'link' },
+   //       { path: '/shop/no_sidebar', title: 'No Sidebar', type: 'link', },
+   //       { path: '/shop/sidebar_popup', title: 'Sidebar Popup', type: 'link' },
+   //       { path: '/shop/metro', title: 'Metro', type: 'link', tag: 'new' },
+   //       { path: '/shop/full_width', title: 'Full Width', type: 'link', tag: 'new' },
+   //       { path: '/shop/three_grid', title: '3 Grid', type: 'link' },
+   //       { path: '/shop/six_grid', title: '6 Six', type: 'link' },
+   //       { path: '/shop/list_view', title: 'List View', type: 'link' }
+   //    ],
+   // },
+   
+   // { path: '/product-details/no-sidebar', title: 'Products', type: 'link'},
    // {
    //    title: 'Products', type: 'sub', children: [
    //       {
@@ -176,59 +191,59 @@ export const MENUITEMS = [
    //       },
    //    ]
    // },
-   {
-      title: 'features', megaMenu: true, megaMenuType: 'small', type: 'sub', children: [
-         {
-            title: 'Brands', type: 'sub', children: [
-               { path: '/portfolio/grid-2', title: 'Signature Scents', type: 'link', icon: 'alert' },
-               { path: '/portfolio/grid-3', title: 'Ester Lauder', type: 'link', icon: 'layout-accordion-merged' },
-               { path: '/portfolio/grid-4', title: 'Mac', type: 'link', icon: 'layers' },
-               { path: '/portfolio/masonry-grid-2', title: 'Lancaster', type: 'link', icon: 'write' },
-               { path: '/portfolio/masonry-grid-3', title: 'YSL Libre', type: 'link', icon: 'map-alt' },
-               { path: '/portfolio/masonry-grid-4', title: 'Anastasia Beverly Hills', type: 'link', icon: 'map-alt' },
-               { path: '/portfolio/masonry-full-width', title: 'Lavin Arpege', type: 'link', icon: 'map-alt' },
-               { path: '/portfolio/masonry-full-width', title: 'Modern Princes', type: 'link', icon: 'map-alt' },
+   // {
+   //    title: 'features', megaMenu: true, megaMenuType: 'small', type: 'sub', children: [
+   //       {
+   //          title: 'Brands', type: 'sub', children: [
+   //             { path: '/portfolio/grid-2', title: 'Signature Scents', type: 'link', icon: 'alert' },
+   //             { path: '/portfolio/grid-3', title: 'Ester Lauder', type: 'link', icon: 'layout-accordion-merged' },
+   //             { path: '/portfolio/grid-4', title: 'Mac', type: 'link', icon: 'layers' },
+   //             { path: '/portfolio/masonry-grid-2', title: 'Lancaster', type: 'link', icon: 'write' },
+   //             { path: '/portfolio/masonry-grid-3', title: 'YSL Libre', type: 'link', icon: 'map-alt' },
+   //             { path: '/portfolio/masonry-grid-4', title: 'Anastasia Beverly Hills', type: 'link', icon: 'map-alt' },
+   //             { path: '/portfolio/masonry-full-width', title: 'Lavin Arpege', type: 'link', icon: 'map-alt' },
+   //             { path: '/portfolio/masonry-full-width', title: 'Modern Princes', type: 'link', icon: 'map-alt' },
 
-            ]
-         },
-         {
-            title: 'Candles & Diffusers (Signature Scents)', type: 'sub', children: [
-               { path: '/layouts/Nursery', title: 'Scented Candles', type: 'link', icon: 'list' },
-               // { path: '/layouts/Vegetables', title: 'Qty Counter', type: 'link', icon: 'gallery' },
-               // { path: '/layouts/Bags', title: 'Cart Top', type: 'link', icon: 'money' },
-               // { path: '/layouts/Shoes', title: 'Cart Bottom', type: 'link', icon: 'time' },
-               // { path: '/layouts/Watch', title: 'Cart Left', type: 'link', icon: 'alarm-clock' },
-               // { path: '/layouts/Tools', title: 'Cart Right', type: 'link', icon: 'alarm-clock' }
-            ]
-         },
-         {
-            title: 'Fragrance', type: 'sub', children: [
-               { path: '/portfolio/title', title: 'Deo', type: 'link', icon: 'bar-chart' },
-               { path: '/portfolio/collection-banner', title: 'Perfum', type: 'link', icon: 'thought' },
-               // { path: '/portfolio/home-slider', title: 'Home Slider', type: 'link', icon: 'video-camera' },
-               // { path: '/portfolio/category', title: 'Category', type: 'link', icon: 'headphone' },
-               // { path: '/portfolio/service', title: 'Service', type: 'link', icon: 'headphone' }
-            ]
-         },
-         {
-            title: 'Cosmetics', type: 'sub', children: [
-               { path: '/portfolio/product-box', title: 'Nail Paint', type: 'link', icon: 'bar-chart' },
-               { path: '/portfolio/product-slider', title: 'Eye Shadow', type: 'link', icon: 'thought' },
-               // { path: '/portfolio/no-slider', title: 'No Slider', type: 'link', icon: 'video-camera' },
-               // { path: '/portfolio/multi-slider', title: 'Multi Slider', type: 'link', icon: 'headphone' },
-               // { path: '/portfolio/tab', title: 'Tab', type: 'link', icon: 'headphone' }
-            ]
-         },
-         // {
-         //    title: 'Email Template', type: 'sub', children: [
-         //       { path: '/portfolio/order-success', title: 'Order Success', type: 'link', icon: 'bar-chart' },
-         //       { path: '/portfolio/order-success-2', title: 'Order Success 2', type: 'link', icon: 'thought' },
-         //       { path: '/portfolio/email-template', title: 'Email Template', type: 'link', icon: 'headphone' },
-         //       { path: '/portfolio/email-template-2', title: 'Email Template 2', type: 'link', icon: 'headphone' }
-         //    ]
-         // }
-      ]
-   },
+   //          ]
+   //       },
+   //       {
+   //          title: 'Candles & Diffusers (Signature Scents)', type: 'sub', children: [
+   //             { path: '/layouts/Nursery', title: 'Scented Candles', type: 'link', icon: 'list' },
+   //             // { path: '/layouts/Vegetables', title: 'Qty Counter', type: 'link', icon: 'gallery' },
+   //             // { path: '/layouts/Bags', title: 'Cart Top', type: 'link', icon: 'money' },
+   //             // { path: '/layouts/Shoes', title: 'Cart Bottom', type: 'link', icon: 'time' },
+   //             // { path: '/layouts/Watch', title: 'Cart Left', type: 'link', icon: 'alarm-clock' },
+   //             // { path: '/layouts/Tools', title: 'Cart Right', type: 'link', icon: 'alarm-clock' }
+   //          ]
+   //       },
+   //       {
+   //          title: 'Fragrance', type: 'sub', children: [
+   //             { path: '/portfolio/title', title: 'Deo', type: 'link', icon: 'bar-chart' },
+   //             { path: '/portfolio/collection-banner', title: 'Perfum', type: 'link', icon: 'thought' },
+   //             // { path: '/portfolio/home-slider', title: 'Home Slider', type: 'link', icon: 'video-camera' },
+   //             // { path: '/portfolio/category', title: 'Category', type: 'link', icon: 'headphone' },
+   //             // { path: '/portfolio/service', title: 'Service', type: 'link', icon: 'headphone' }
+   //          ]
+   //       },
+   //       {
+   //          title: 'Cosmetics', type: 'sub', children: [
+   //             { path: '/portfolio/product-box', title: 'Nail Paint', type: 'link', icon: 'bar-chart' },
+   //             { path: '/portfolio/product-slider', title: 'Eye Shadow', type: 'link', icon: 'thought' },
+   //             // { path: '/portfolio/no-slider', title: 'No Slider', type: 'link', icon: 'video-camera' },
+   //             // { path: '/portfolio/multi-slider', title: 'Multi Slider', type: 'link', icon: 'headphone' },
+   //             // { path: '/portfolio/tab', title: 'Tab', type: 'link', icon: 'headphone' }
+   //          ]
+   //       },
+   //       // {
+   //       //    title: 'Email Template', type: 'sub', children: [
+   //       //       { path: '/portfolio/order-success', title: 'Order Success', type: 'link', icon: 'bar-chart' },
+   //       //       { path: '/portfolio/order-success-2', title: 'Order Success 2', type: 'link', icon: 'thought' },
+   //       //       { path: '/portfolio/email-template', title: 'Email Template', type: 'link', icon: 'headphone' },
+   //       //       { path: '/portfolio/email-template-2', title: 'Email Template 2', type: 'link', icon: 'headphone' }
+   //       //    ]
+   //       // }
+   //    ]
+   // },
    // {
    //    title: 'Pages', type: 'sub', children: [
    //       {
@@ -271,13 +286,6 @@ export const MENUITEMS = [
    //       { path: '/page/faq', title: 'faq', type: 'link' },
    //    ]
    // },
-   {
-      title: 'Blogs', type: 'sub', children: [
-         // { path: '/blogs/blog_left_sidebar', title: 'blog left sidebar', type: 'link' },
-         { path: '/blogs/blog_right_sidebar', title: 'blogs', type: 'link' },
-         // { path: '/blogs/no_sidebar', title: 'no sidebar', type: 'link' },
-         { path: '/blogs/blog_detail', title: 'blog detail', type: 'link' },
-      ]
-   },
+   
 ]
 
