@@ -151,6 +151,17 @@ const BlogSection = ({ type, sectionClass, title, inner, hrClass }) => {
     },
   });
 
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 5,
+    slidesToScroll: 5,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    draggable:true,
+  };
+
   console.log("data slider", data);
   return (
     <Fragment>
@@ -169,7 +180,7 @@ const BlogSection = ({ type, sectionClass, title, inner, hrClass }) => {
                   </div>
                 )}
               </div>
-              <Slider {...Slider5} className="slide-3 no-arrow ">
+              <Slider {...Slider5} {...settings} className="slide-3 no-arrow ">
                 {data &&
                   data.blog.map((item, index) => (
                     <Col md="12" key={index}>
