@@ -83,10 +83,10 @@ const Fashion = () => {
         cartClass="cart-info cart-wrap"
       />
       <ServiceLayout sectionClass="border-section small-section" />
-      <Blog type="fashion" title="title1" inner="title-inner1" />
-      <Instagram type="fashion" />
+      <Blog type="blogpost" title="title1" inner="title-inner1" />
+      {/* <Instagram type="fashion" /> */}
       <div className="section-b-space">
-        <LogoBlock />
+        {/* <LogoBlock /> */}
       </div>
       <MasterFooter
         footerClass={`footer-light`}
