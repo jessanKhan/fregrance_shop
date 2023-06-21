@@ -46,13 +46,13 @@ const Fashion = () => {
       <ModalComponent />
       <HeaderOne logoName={"logo.png"} topClass="top-header" />
       <Banner />
-      <CollectionBanner />
       {/* <BrandsParagraph
         title="title1 section-t-space"
         inner="title-inner1"
         hrClass={false}
       /> */}
       <BrandsSlider type="fashion" title="title1" inner="title-inner1"/>
+      <CollectionBanner />
        
       <Paragraph
         title="title1 section-t-space"

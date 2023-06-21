@@ -155,8 +155,8 @@ const BlogSection = ({ type, sectionClass, title, inner, hrClass }) => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 5,
-    slidesToScroll: 5,
+    slidesToShow: 4,
+    slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
     draggable:true,
@@ -169,8 +169,8 @@ const BlogSection = ({ type, sectionClass, title, inner, hrClass }) => {
         <Container>
           <Row>
             <Col md="12">
-              <div className={title}>
-                {/* <h4>our collection</h4> */}
+              {/* <div className={title}>
+                <h4>our collection</h4>
                 <h2 className={inner}>Our Brands</h2>
                 {hrClass ? (
                   <hr role="tournament6"></hr>
@@ -179,7 +179,7 @@ const BlogSection = ({ type, sectionClass, title, inner, hrClass }) => {
                     <span></span>
                   </div>
                 )}
-              </div>
+              </div> */}
               <Slider {...Slider5} {...settings} className="slide-3 no-arrow ">
                 {data &&
                   data.blog.map((item, index) => (

@@ -136,17 +136,25 @@ export const MENUITEMS = [
 ]
 },
    { path: '/shop/left_sidebar', title: 'Rewards', type: 'sub', children:[
-   { path: '/layouts/Tools',title: 'Host Rewards', type: 'link' },
-   { path: '/layouts/Tools',title: 'Customer Rewards', type: 'link' },
-   { path: '/layouts/Tools',title: 'Gift Certificates', type: 'link' },
+   { path: '/layouts/Tools',title: 'Host', type: 'link' },
+   { path: '/layouts/Tools',title: 'Customer', type: 'link' },
+   { path: '/layouts/Tools',title: 'Social', type: 'link' },
 
 
 ]} ,
-   { path: '/shop/left_sidebar', title: 'Events', type: 'sub'} ,
-   { path: '/shop/left_sidebar', title: 'Join Our Team', type: 'link'} ,
+   {  title: 'Events', type: 'sub', children:[
+   { path: '/layouts/Tools',title: 'Hosted Events', type: 'link' },
+   { path: '/layouts/Tools',title: 'Public Events', type: 'link' },
+   { path: '/layouts/Tools',title: 'Virtual Events', type: 'link' },
+   ] } ,
+   { title: 'Join Our Team', type: 'sub', children:[
+      { path: '/shop/left_sidebar', title: 'Join Our Team', type: 'link'} ,
+      { path: '/shop/left_sidebar', title: 'Our Story', type: 'link'} ,
+      { path: '/shop/left_sidebar', title: 'Contact', type: 'link'} ,
+   ]} ,
    // { path: '/shop/left_sidebar', title: 'Our Story', type: 'link'} ,
    {
-      path: '/blogs/blog_right_sidebar',  title: 'Blogs', type: 'link', 
+      path: '/blogs/blog_right_sidebar',  title: 'Blog', type: 'link', 
       // children: [
       //    // { path: '/blogs/blog_left_sidebar', title: 'blog left sidebar', type: 'link' },
       //    { path: '/blogs/blog_right_sidebar', title: 'blogs', type: 'link' },
