@@ -110,10 +110,8 @@ const MasterFooter = ({
                     <div className="footer-logo">
                       <LogoImage logo={logoName} />
                     </div>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam,
+                    <p style={{paddingTop:20,paddingBottom:50}}>
+                      Feel On Top Of The World!
                     </p>
                     <div className="footer-social">
                       <ul>

@@ -11,17 +11,17 @@ const Data = [
   {
     link: svgFreeShipping,
     title: "'fast shipping' nation wide",
-    service: "can they pay for faster shipping",
+    service: "New Zealand Based Warehouse",
   },
   {
     link: svgservice,
     title: "24 X 7 service",
-    service: "online service for 24 x 7",
+    service: "online support - all day, every day",
   },
   {
     link: svgoffer,
-    title: "featured offer",
-    service: "new online special featured offer",
+    title: "New Featured offers",
+    service: "Subscribe for new featured offers",
   },
 ];
 
