@@ -817,6 +817,11 @@ body.rtl {
         justify-content: flex-end;
       }
     }
+    &.p-center {
+      .contain-banner {
+        justify-content: center;
+      }
+    }
   }
   .product-box,
   .product-wrap {
