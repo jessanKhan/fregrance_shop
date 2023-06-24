@@ -342,6 +342,39 @@ body {
       margin-top: 45px;
     }
   }
+  .collection-banner {
+    .contain-banner {
+      // &.banner-3 {
+      //   padding-left: 45px;
+      //   padding-right: 45px;
+      //   h2 {
+      //     font-size: 30px;
+      //   }
+      // }
+      // &.banner-4 {
+      //   padding-left: 45px;
+      //   padding-right: 45px;
+      //   h2 {
+      //     font-size: 28px;
+      //   }
+      // }
+      h2 {
+        font-size: 30px;
+        letter-spacing: 0.01em;
+      }
+      // h4 {
+      //   letter-spacing: 0.01em;
+      // }
+    }
+    &.christmas-banner {
+      .contain-banner {
+        > div {
+          background-color: rgba($black, 0.2);
+          padding: 25px 40px;
+        }
+      }
+    }
+  }
 }
 @media (max-width: 1430px) and (min-width: 1200px) {
   .dashboard-section{
@@ -560,7 +593,7 @@ body {
         }
       }
       h2 {
-        font-size: 55px;
+        font-size: 30px;
         letter-spacing: 0.01em;
       }
       h4 {
@@ -1247,7 +1280,7 @@ body {
         }
       }
       h2 {
-        font-size: 40px;
+        font-size: 25px;
       }
     }
   }
@@ -2341,7 +2374,7 @@ body {
         }
       }
       h2 {
-        font-size: 25px;
+        font-size: 17px;
       }
     }
   }

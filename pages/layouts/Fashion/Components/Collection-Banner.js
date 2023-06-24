@@ -31,16 +31,7 @@ const Data = [
     class: "p-right text-center",
   },
 ];
-const Data2 = [
-  {
-    img: banner3,
-    about: "candles & ",
-    about2: "diffusers",
-    offer: "10% off",
-    link: "/left-sidebar/collection",
-    class: "p-right text-center",
-  },
-];
+
 const MasterCollectionBanner = ({
   img,
   about,
@@ -95,24 +86,6 @@ const CollectionBanner = () => {
               })}
             </Row>
           </Container>
-          {/* <Container >
-          <Row className="partition2" style={{justifyContent: "center",
-alignItems: "center", paddingTop:30}} >
-            {Data2.map((data, i) => {
-              return (
-                <MasterCollectionBanner
-                  key={i}
-                  img={data.img.src}
-                  about={data.about}
-                  about2={data.about2}
-                  link={data.link}
-                  offer={data.offer}
-                  classes={data.class}
-                />
-              );
-            })}
-          </Row>
-        </Container> */}
         </div>
       </section>
       {/*collection banner end*/}
