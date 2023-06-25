@@ -54,7 +54,7 @@ export const MENUITEMS = [
    // { path: '/shop/left_sidebar', title: 'Shop', type: 'link'} ,
    
    { title: 'Shop', type: 'sub',children:[
-      { path: '/product-details/no-sidebar', title: 'Shop by Categories', type: 'sub',children: [
+      { path: '/product-details/no-sidebar', title: 'Category', type: 'sub',children: [
       { path: '/layouts/Tools', title: 'Fragrances', type: 'link' },
       { path: '/layouts/Christmas', title: 'Skin Care', type: 'link' },
       { path: '/layouts/Marketplace', title: 'Make Up', type: 'link' },
@@ -69,7 +69,7 @@ export const MENUITEMS = [
       { path: '/layouts/Nursery', title: 'Nursery', type: 'link' },
    ]
 },
-{ path: '/product-details/no-sidebar', title: 'Shop by Brand', type: 'sub',children: [
+{ path: '/product-details/no-sidebar', title: 'Brands', type: 'sub',children: [
    { path: '/layouts/Tools',title: 'Signature Scents', type: 'link' },
    { path: '/layouts/Christmas', title: 'Ester Lauder', type: 'link' },
    { path: '/layouts/Marketplace', title: 'Mac', type: 'link' },
@@ -136,9 +136,9 @@ export const MENUITEMS = [
 ]
 },
    { path: '/shop/left_sidebar', title: 'Rewards', type: 'sub', children:[
-   { path: '/layouts/Tools',title: 'Host', type: 'link' },
    { path: '/layouts/Tools',title: 'Customer', type: 'link' },
-   { path: '/layouts/Tools',title: 'Social', type: 'link' },
+   { path: '/layouts/Tools',title: 'Host', type: 'link' },
+   { path: '/layouts/Tools',title: 'Social Retailer', type: 'link' },
 
 
 ]} ,
