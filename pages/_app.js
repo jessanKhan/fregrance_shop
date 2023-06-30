@@ -14,6 +14,9 @@ import Helmet from "react-helmet";
 import { ApolloProvider } from "@apollo/client";
 import { useApollo } from '../helpers/apollo';
 import Head from "next/head";
+import { Provider } from "react-redux";
+import store from '../app/redux/store'
+import SnackbarProvider from 'react-simple-snackbar'
 
 export default function MyApp({ Component, pageProps }) {
   const [isLoading, setIsLoading] = useState(true);
@@ -32,7 +35,9 @@ export default function MyApp({ Component, pageProps }) {
   }, []);
   return (
     <>
+    <Provider store={store}>
     <ApolloProvider client={apolloClient}>
+      <SnackbarProvider>
       {isLoading ? (
         <div className="loader-wrapper">
           {url === "Christmas" ? (
@@ -82,7 +87,9 @@ export default function MyApp({ Component, pageProps }) {
           </div>
         </>
       )}
+      </SnackbarProvider>
       </ApolloProvider>
+      </Provider>
     </>
   );
 }

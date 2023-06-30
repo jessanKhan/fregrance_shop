@@ -2,13 +2,24 @@ import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import Link from "next/link";
 import { useRouter } from "next/router";
-
+import { useSelector,useDispatch } from "react-redux";
+import { fakedata } from "../../../app/redux/slice/authSlice";
+import { getUserTokenFromCookie, removeUserTokenFromCookie,removeUserIdFromCookie } from "../../../app/apis/cookies";
 const TopBarDark = ({ topClass, fluid }) => {
   const router = useRouter();
+  const dispatch = useDispatch();
+  const isTokenPresent = getUserTokenFromCookie()
   const firebaseLogout = () => {
     localStorage.setItem('user', false)
-    router.push("/page/account/login-auth");
+    // dispatch(fakedata(false))
+    router.push("/page/account/login");
   };
+  const logoutHandler = () => {
+    removeUserIdFromCookie();
+    removeUserTokenFromCookie();
+    router.push("/page/account/login");
+
+  }
   return (
     <div className={topClass}>
       <Container fluid={fluid}>
@@ -37,19 +48,24 @@ const TopBarDark = ({ topClass, fluid }) => {
               <li className="onhover-dropdown mobile-account">
                 <i className="fa fa-user" aria-hidden="true"></i> My Account
                 <ul className="onhover-show-div">
-                  <li>
+                {isTokenPresent&& <li>
+                    <Link href={`/page/account/dashboard`}>
+                      <a>Dashboard</a>
+                    </Link>
+                  </li>}
+                 {!isTokenPresent&& <li>
                     <Link href={`/page/account/login`}>
                       <a>Login</a>
                     </Link>
-                  </li>
-                  <li>
+                  </li>}
+                 {!isTokenPresent && <li>
                     <Link href={`/page/account/register`}>
                       <a>Register</a>
                     </Link>
-                  </li>
-                  <li onClick={() => firebaseLogout()}>
-                    <a>Logout</a>
-                  </li>
+                  </li>}
+                 {isTokenPresent&& <li onClick={() => firebaseLogout()}>
+                    <a onClick={()=> {logoutHandler()}}>Logout</a>
+                  </li>}
                 </ul>
               </li>
             </ul>

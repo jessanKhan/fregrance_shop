@@ -1,9 +1,43 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import CommonLayout from '../../../components/shop/common-layout';
 import { Container, Row ,Col} from 'reactstrap';
+import { useSelector,useDispatch } from 'react-redux';
+// import {getUserData} from '../../../app/redux/slice/authSlice'
+import {getUser} from '../../../app/apis/auth/index'
+import { getUserIdFromCookie,removeUserIdFromCookie,removeUserTokenFromCookie } from '../../../app/apis/cookies';
+import { useRouter } from 'next/router';
+import { useSnackbar } from 'react-simple-snackbar'
+
 
 const Dashboard = () => {
+    const router = useRouter();
+    const [open, close] =useSnackbar()
+    const userId=useSelector(state=> state.user)
+    const dispatch = useDispatch()
+    const [userData,setUserData] = useState(null)
+
+    console.log("userId", getUserIdFromCookie())
+
+
+    useEffect(()=>{
+// dispatch(getUserData(getUserIdFromCookie()))
+getUser(getUserIdFromCookie()).then(user=>{
+    console.log("first",user?.data)
+    setUserData(user?.data)
+}).catch(error=>{
+    open("Unexpected error")
+    console.log("first",error)
+})
+    },[])
+
+console.log("user data state", userData)
     const [accountInfo,setAccountInfo] = useState(false)
+    const logoutHandler = () => {
+        removeUserIdFromCookie();
+        removeUserTokenFromCookie();
+        router.push("/page/account/login");
+    
+      }
     return (
         <CommonLayout parent="home" title="dashboard">
             <section className="section-b-space">
@@ -28,7 +62,7 @@ const Dashboard = () => {
                                         <li><a href="#">Newsletter</a></li>
                                         <li><a href="#">My Account</a></li>
                                         <li><a href="#">Change Password</a></li>
-                                        <li className="last"><a href="#">Log Out</a></li>
+                                        <li className="last" onClick={()=>logoutHandler()}><a href="#">Log Out</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -40,7 +74,7 @@ const Dashboard = () => {
                                         <h2>My Dashboard</h2>
                                     </div>
                                     <div className="welcome-msg">
-                                        <p>Hello, MARK JECNO !</p>
+                                        <p>Hello, {userData?.user?.fullName || "Full Name"} !</p>
                                         <p>From your My Account Dashboard you have the ability to view a snapshot of your recent
                                         account activity and update your account information. Select a link below to view or
                                     edit information.</p>
@@ -56,8 +90,8 @@ const Dashboard = () => {
                                                         <h3>Contact Information</h3><a href="#">Edit</a>
                                                     </div>
                                                     <div className="box-content">
-                                                        <h6>MARK JECNO</h6>
-                                                        <h6>MARk-JECNO@gmail.com</h6>
+                                                        <h6>{userData?.user?.fullName || "Full Name"}</h6>
+                                                        <h6>{userData?.user?.email}</h6>
                                                         <h6><a href="#">Change Password</a></h6>
                                                     </div>
                                                 </div>
